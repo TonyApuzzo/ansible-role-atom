@@ -28,12 +28,15 @@ None.
 ```yaml
 - hosts: all
   roles:
-    - TonyApuzzo.ansible-role-atom
+    - role: TonyApuzzo.ansible-role-atom
+      become: yes
 ```
 
 ## TODO
 
-Add support for SUSE, Fedora, and Arch if/when people ask for it.
+* Investigate a better way to install packages in case it is trivial to do it from ansible:command or similar
+* Add support for SUSE, Fedora, and Arch if/when people ask for it.
+
 
 ## License
 
