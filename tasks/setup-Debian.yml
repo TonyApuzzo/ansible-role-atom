@@ -7,11 +7,14 @@
   register: add_repository_key
   ignore_errors: true
 
+- name: Ensure apt-transport-https is present to be able to install the deb package
+  package: name=apt-transport-https state=present
+
 - name: Ensure curl is present (on older systems without SNI).
   package: name=curl state=present
   when: add_repository_key|failed
 
-- name: Add Atom apt key (alternative for older systems without SNI).
+  - name: Add Atom apt key (alternative for older systems without SNI).
   shell: "curl -sSL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -"
   args:
     warn: no
