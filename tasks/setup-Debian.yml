@@ -2,7 +2,7 @@
 - name: Add Atom apt key.
   apt_key:
     url: https://packagecloud.io/AtomEditor/atom/gpgkey
-    id: 11DCBD62718BDF02EA132AA011B8C6BE16ABDD78
+    #id: 11DCBD62718BDF02EA132AA011B8C6BE16ABDD78 # this is not the correct id
     state: present
   register: add_repository_key
   ignore_errors: true
