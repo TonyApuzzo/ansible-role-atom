@@ -1,6 +1,6 @@
 # Ansible Role: Atom
 
-[![Build Status](https://travis-ci.org/tonyapuzzo/ansible-role-atom.svg?branch=master)](https://travis-ci.org/tonyapuzzo/ansible-role-atom)
+[![Build Status](https://travis-ci.org/TonyApuzzo/ansible-role-atom.svg?branch=master)](https://travis-ci.org/TonyApuzzo/ansible-role-atom)
 
 An Ansible Role that installs [Atom](https://www.atom.io) on Linux.
 
