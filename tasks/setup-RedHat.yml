@@ -14,4 +14,4 @@
     file: atom.repo
     gpgcheck: no
     gpgkey: https://packagecloud.io/AtomEditor/atom/gpgkey
-    repo_gpgcheck: yes
+    repo_gpgcheck: no

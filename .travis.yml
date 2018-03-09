@@ -33,7 +33,7 @@ script:
   - ${PWD}/tests/test.sh
 
   # Ensure Atom is installed.
-  - 'docker exec --tty "${container_id}" env TERM=xterm which atom'
+  - 'docker exec --tty "${container_id}" bash -c "type -p atom"'
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
