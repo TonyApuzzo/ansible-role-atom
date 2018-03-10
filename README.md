@@ -10,7 +10,7 @@ Adhering to the Unix philosophy of doing one thing well and not re-inventing the
 
 ## Requirements
 
-None.
+- ansible >= 2.0
 
 ## Role Variables
 
